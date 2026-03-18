@@ -1,3 +1,4 @@
+// LISTE DES VARIABLES
 const bannerImg = document.querySelector('.banner-img');
 const arrowLeft = document.querySelector('.arrow_left');
 const arrowRight = document.querySelector('.arrow_right');
@@ -49,3 +50,4 @@ arrowRight.addEventListener('click', function () {
     updateCarousel(currentIndex, 'right');
     updateDots(currentIndex); // MISE À JOUR DES POINTS INDICATEURS
 });
+
