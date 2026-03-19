@@ -18,7 +18,7 @@ function updateDots(index) {
 }
 
 // MISE À JOUR DES POINTS INDICATEURS, IMAGES ET TEXTE
-function updateCarousel(index, direction) {
+function updateCarrousel(index, direction) {
       if (currentIndex === -1 && direction === 'left') {
         currentIndex = slides.length - 1;
     } else if (currentIndex === slides.length && direction === 'right') {
@@ -40,14 +40,14 @@ function updateCarousel(index, direction) {
 // GESTION CLIC FLÈCHE GAUCHE
 arrowLeft.addEventListener('click', function () {
     currentIndex = (currentIndex - 1);
-    updateCarousel(currentIndex, 'left');
+    updateCarrousel(currentIndex, 'left');
     updateDots(currentIndex); // MISE À JOUR DES POINTS INDICATEURS
 });
 
 // GESTION CLIC FLÈCHE DROITE
 arrowRight.addEventListener('click', function () {
     currentIndex = (currentIndex + 1) ;
-    updateCarousel(currentIndex, 'right');
+    updateCarrousel(currentIndex, 'right');
     updateDots(currentIndex); // MISE À JOUR DES POINTS INDICATEURS
 });
 
